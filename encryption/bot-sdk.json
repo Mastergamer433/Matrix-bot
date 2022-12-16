@@ -1,0 +1,9 @@
+{
+  "rooms": {
+    "6a53d928647ac1aca8f50f7bd60400c012a9cfa6384b83cfc6ed663a7ca6293b67f228c3b6e376a1112ed10f9fcae8190928e00726428a30395c058ca422e021": {
+      "algorithm": "m.megolm.v1.aes-sha2",
+      "historyVisibility": "shared"
+    }
+  },
+  "deviceId": "ZINYMCRTOE"
+}

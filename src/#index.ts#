@@ -4,14 +4,14 @@ import {
   AutojoinRoomsMixin,
 } from "matrix-bot-sdk";
 import CommandHandler from "./commands/handler";
-import CommandRegister from "./register-commands";
+import * as CommandRegi from "./register-commands";
 
 CommandRegister();
 const homeserverUrl = "https://matrix.kimane.se"; // make sure to update this with your url
 const accessToken = "syt_dGVzdC1ib3Q_QXImEWsGtDaDofwcLkVT_0adqYN";
 const storage = new SimpleFsStorageProvider("bot.json");
 const client = new MatrixClient(homeserverUrl, accessToken, storage);
-const { commands } = CommandRegister;
+const { commandList } = CommandRegister;
 
 const main = () => {
   AutojoinRoomsMixin.setupOnClient(client);
